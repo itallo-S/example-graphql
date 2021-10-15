@@ -1,0 +1,26 @@
+{
+  "examples": [
+    {
+      "id": "123",
+      "title": "Este é um exemplo",
+      "description": "Este exemplo é muito legal",
+      "createdDate": "1134178432204",
+      "updatedDate": "1249148237393"
+    },
+    {
+      "description": "Outra descrição",
+      "title": "Outro exemplo",
+      "id": "zHpfuz5"
+    },
+    {
+      "description": "Descricao da daily",
+      "title": "Name da daily",
+      "id": "9dx1ETn"
+    },
+    {
+      "description": "Descrição do MD",
+      "title": "Exemplo do MD",
+      "id": "qdo3g1n"
+    }
+  ]
+}
