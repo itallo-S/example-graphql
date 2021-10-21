@@ -12,7 +12,6 @@ export class GetExampleByIdUseCase {
 
   execute = async (id: string): Promise<ExampleModel> => {
     const exampleModel = await this.exampleRepository.getById(id);
-
     return exampleModel;
   }
 }

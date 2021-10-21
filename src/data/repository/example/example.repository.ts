@@ -25,7 +25,6 @@ export class ExampleRepository implements IExampleRepository {
   getById = async (id: string): Promise<ExampleModel> => {
     const exampleResponse = await this.exampleApiClient.getById(id);
     const exampleModel = this.exampleResponseToModelMapper.map(exampleResponse);
-
     return exampleModel;
   }
 }
