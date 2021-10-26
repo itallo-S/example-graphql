@@ -1,5 +1,14 @@
 export interface ProductModel {
-  logotype?: string;
 
-  codes?: string[]
+   name?: string,
+
+   code?: string,
+
+   brand?: string,
+
+   price?: string[],
+   
+   thumbnail?: string[]
+
 }
+

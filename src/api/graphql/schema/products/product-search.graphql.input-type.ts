@@ -1,8 +1,7 @@
 import { Field, InputType,  } from "type-graphql";
 
-
 @InputType()
-export class ProductInput {
+export class ProductSearchInput {
 
   @Field()
   logotype: string

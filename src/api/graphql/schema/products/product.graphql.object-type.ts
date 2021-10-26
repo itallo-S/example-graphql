@@ -4,15 +4,18 @@ import { Field, ObjectType } from "type-graphql";
 export class Product {
 
   @Field()
-  logotype: string;
+  sku: string
+
+  @Field()
+  name: string
+
+  @Field()
+  brand: string
 
   @Field(type => [String])
-  codes: string[];
+  price: string[]
 
-  // @Field()
-  // content: string
-  // @Field()
-  // sku: string
-
-
+  @Field(type => [String])
+  thumbnail: string[]
 }
+
