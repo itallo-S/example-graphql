@@ -7,7 +7,7 @@ export class SearchCustomerInputToModelMapper {
   map = (searchCostumerInput: CustomerInputType): CustomerInputType => {
     const searchCostumerInputModel: CustomerInputType = {
         branch:searchCostumerInput.branch.toUpperCase(),
-        cpf:searchCostumerInput.cpf
+        cpf:searchCostumerInput.cpf.split('.').join('').split('-').join('')
     }
 
     return searchCostumerInputModel;
