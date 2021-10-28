@@ -28,9 +28,9 @@ export default class ApiClient implements IApiClient {
       baseURL: apiConfiguration.baseUrl,
       responseType: 'json' as const,
       headers: {
-        'Content-Type': 'application/json',
+          'Content-Type': 'application/json',
         ...(apiConfiguration.accessToken && {
-          Authorization: `Bearer ${apiConfiguration.accessToken}`,
+          Authorization: `${apiConfiguration.accessToken}`,
         }),
       },
       timeout: 10 * 1000,

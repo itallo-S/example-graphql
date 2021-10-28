@@ -10,22 +10,19 @@ import { Example } from "./example.graphql.object-type";
 @Resolver()
 @Service()
 export class ExampleResolver {
-
   constructor(
     private createExampleUseCase: CreateExampleUseCase,
     private getExampleByIdUseCase: GetExampleByIdUseCase,
     private exampleInputToModelMapper: ExampleInputToModelMapper,
-    private exampleToGraphQLMapper: ExampleToGraphQLMapper,
-  ) { }
+    private exampleToGraphQLMapper: ExampleToGraphQLMapper
+  ) {}
 
-  @Mutation(returns => Example)
-  async createExample(
-    @Arg('example') exampleInput: ExampleInput
-  ) {
+  @Mutation((returns) => Example)
+  async createExample(@Arg("example") exampleInput: ExampleInput) {
     try {
       const exampleModel = this.exampleInputToModelMapper.map(exampleInput);
       const createdExample = await this.createExampleUseCase.execute(exampleModel);
-      const example = this.exampleToGraphQLMapper.map(createdExample);
+      const example = this.exampleToGraphQLMapper.map(createdExample); 
 
       return example;
     } catch (error) {
@@ -33,10 +30,8 @@ export class ExampleResolver {
     }
   }
 
-  @Query(returns => Example)
-  async example(
-    @Arg('id') id: string
-  ) {
+  @Query((returns) => Example)
+  async example(@Arg("id") id: string) {
     const exampleModel = await this.getExampleByIdUseCase.execute(id);
     const example = this.exampleToGraphQLMapper.map(exampleModel);
 

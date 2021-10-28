@@ -8,7 +8,7 @@ export class ExampleInputToModelMapper {
   map = (exampleInput: ExampleInput): ExampleModel => {
     const exampleModel: ExampleModel = {
       name: exampleInput.name,
-      description: exampleInput.description,
+      description: exampleInput.description
     }
 
     return exampleModel;
