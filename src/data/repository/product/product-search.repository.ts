@@ -16,7 +16,6 @@ export class ProductSearchRepository implements IProductSearchRepository {
   getProductSearch = async (productSearchParams: ProductSearchInput): Promise<ProductModel[]> => {
     const productSearchResponse = await this.productSearchApiClient.getProductSearch(productSearchParams);
     const productSearchModel = this.productSearchResponseToModelMapper.map(productSearchResponse);
-
     return productSearchModel;
   }
 }

@@ -9,6 +9,6 @@ export class ProductSearchInput {
   @Field()
   branchCode: string
 
-  @Field(type => [String])
-  codes: string[];
+   @Field()
+  inputValue: string
 }

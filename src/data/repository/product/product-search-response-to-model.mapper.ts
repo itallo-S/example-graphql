@@ -10,8 +10,9 @@ export class ProductSearchResponseToModelMapper {
         code: content.product.code,
         name: content.product.name,
         brand: content.product.brand.name,
+        quantity: content.product.quantity,
         price: content.prices.map((content) => content.bestPrice.totalPrice),
-        thumbnail: content.product.images.map((content) => content.url)
+        thumbnail: content.product.images.map((content) => content.url),
       }
     })
     return productList ;

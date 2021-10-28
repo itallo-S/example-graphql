@@ -6,6 +6,8 @@ export interface ProductModel {
 
    brand?: string,
 
+   quantity?: string,
+
    price?: string[],
    
    thumbnail?: string[]

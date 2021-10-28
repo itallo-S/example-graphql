@@ -12,6 +12,9 @@ export class Product {
   @Field()
   brand: string
 
+  @Field()
+  posology: string
+
   @Field(type => [String])
   price: string[]
 

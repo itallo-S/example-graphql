@@ -11,6 +11,7 @@ interface productInfo {
   name: string
   code: string
   brand: brandInfo
+  quantity: string
   images: imageInfo[]
 }
 

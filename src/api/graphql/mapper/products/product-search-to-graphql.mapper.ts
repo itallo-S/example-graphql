@@ -10,6 +10,7 @@ export class ProductSearchToGraphQLMapper {
         sku: product.code || "",
         name: product.name || "",
         brand: product.brand || "",
+        posology: product.quantity || "",
         price: product.price || [],
         thumbnail: product.thumbnail || []
       }
