@@ -4,10 +4,10 @@ import { User } from "../../schema/user/search-user.graphql.object-type";
 
 @Service()
 export class SearchUserToGraphQlMapper {
-    map = (userModel:UserModel,id_rd:string) => {
+    map = (userModel:UserModel,idRd:string) => {
         const userGraphQl:User = {
-            id_api:userModel.id as number,
-            id_rd,
+            idApi:userModel.id as number,
+            idRd,
             name:userModel.Operator || ''
         }
         

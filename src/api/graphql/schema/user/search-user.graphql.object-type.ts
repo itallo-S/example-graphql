@@ -4,10 +4,10 @@ import { ObjectType,Field } from "type-graphql";
 export class User {
 
     @Field()
-    id_api:number
+    idApi:number
 
     @Field()
-    id_rd:string
+    idRd:string
 
     @Field()
     name:string

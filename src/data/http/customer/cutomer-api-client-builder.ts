@@ -3,7 +3,7 @@ import ApiClient from "../core/api-client";
 import { Envs } from '../../../config.env';
 
 @Service()
-export class UserApiClientBuilder extends ApiClient {
+export class CustomerApiClientBuilder extends ApiClient {
 
   constructor (
     @Inject(Envs.TCR_ACCESS_TOKEM)
