@@ -18,6 +18,7 @@ export class UserSearchResolver {
         @Arg('id') id:string
     ) {   
         const userModel = await this.getUserUseCase.execute(id)
+        console.log(userModel)
         const user = this.searchUserToGraphQlMapper.map(userModel,id)
         return user
     }
