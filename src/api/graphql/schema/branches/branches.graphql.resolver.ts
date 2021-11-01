@@ -19,7 +19,6 @@ export class BranchesResolver {
     ) {
         const branchesModel = await this.getBranchesUseCase.execute(branch)
         const branches = this.branchesToGraphQLMapper.map(branchesModel)
-        console.log(branches)
         return branches
         
     }
