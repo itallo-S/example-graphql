@@ -9,7 +9,6 @@ export class ExampleModelToCreateRequestMapper {
       description: example.description || '',
       title: example.name || ''
     }
-
     return exampleRequest;
   }
 }

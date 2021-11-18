@@ -8,5 +8,4 @@ export interface ExampleModel {
   createdAt?: Date;
 
   updatedAt?: Date;
-
 }

@@ -19,7 +19,6 @@ export class LoginApiClient {
             scope: 'read',
             grant_type: 'password',
           })
-          console.log(payloadUrlEnconded)
         try {
             const login = await this.loginApiClientBuilder.post<CreateLoginRequest, LoginResponse>(`/tcr/oauth/token`, payloadUrlEnconded as any,
             {
