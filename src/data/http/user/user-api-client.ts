@@ -12,7 +12,7 @@ export class UserApiClient {
     
      getUser = async ( id:string ) => {
          try{
-            const user = await this.userApiClient.get<UserResponse>(`/api/v1/operators/operators/registration/207717`)
+            const user = await this.userApiClient.get<UserResponse>(`/api/v1/operators/operators/registration/${id}`)
             return user
          }
          catch(erro: any){
