@@ -30,5 +30,14 @@
       "name":"Shampoo",
       "category":"Perfumaria"
     }
+  ],
+  "product": [
+    {
+      "sku": "123",
+      "description": "NEOSALDINA COM 30 DRÁGEAS",
+      "brand": "NEOSALDINA",
+      "price": "26,84",
+      "thumbnail": "https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fimg.drogasil.com.br%2Fcatalog%2Fproduct%2F3%2F8%2F38398_1_1_1_1_1.jpg%3Fwidth%3D170%26height%3D170%26quality%3D85%26type%3Dresize&w=256&q=75"
+    }
   ]
 }

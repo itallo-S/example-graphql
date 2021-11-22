@@ -6,6 +6,8 @@ export enum Envs {
   LOGIN_ACCESS_TOKEN = "LOGIN_ACCESS_TOKEN",
   TCR_BASE_URL = "TCR_BASE_URL",
   TCR_ACCESS_TOKEM = "TCR_ACCESS_TOKEM",
+  PRODUCT_SEARCH_ACCESS_TOKEN = "PRODUCT_SEARCH_ACCESS_TOKEN",
+  PRODUCT_SEARCH_BASE_URL = "PRODUCT_SEARCH_BASE_URL",
 }
 
 export function configEnvs() {
@@ -14,4 +16,6 @@ export function configEnvs() {
   Container.set(Envs.LOGIN_ACCESS_TOKEN,process.env.LOGIN_ACCESS_TOKEN);
   Container.set(Envs.TCR_BASE_URL,process.env.TCR_BASE_URL);
   Container.set(Envs.TCR_ACCESS_TOKEM , process.env.TCR_ACCESS_TOKEM);
+  Container.set(Envs.PRODUCT_SEARCH_ACCESS_TOKEN, process.env.PRODUCT_SEARCH_ACCESS_TOKEN);
+  Container.set(Envs.PRODUCT_SEARCH_BASE_URL, process.env.PRODUCT_SEARCH_BASE_URL);
 }
