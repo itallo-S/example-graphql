@@ -12,5 +12,23 @@
       "title": "Outro exemplo",
       "id": "zHpfuz5"
     }
+  ],
+
+  "produtcs":[
+    {
+      "sku":"1257",
+      "name":"Doril",
+      "category":"Medicamento"
+    },
+    {
+      "sku":"1112",
+      "name":"Rivotril",
+      "category":"Controlados"
+    },
+    {
+      "sku":"1205",
+      "name":"Shampoo",
+      "category":"Perfumaria"
+    }
   ]
 }

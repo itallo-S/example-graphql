@@ -30,12 +30,12 @@ export class ExampleResolver {
     }
   }
 
-  @Query((returns) => Example)
-  async example(@Arg("id") id: string) {
-
+  @Query(returns => Example )
+  async example(
+    @Arg('id') id: string
+  ) {
     const exampleModel = await this.getExampleByIdUseCase.execute(id);
     const example = this.exampleToGraphQLMapper.map(exampleModel);
-    console.log(example)
     return example;
   }
 }

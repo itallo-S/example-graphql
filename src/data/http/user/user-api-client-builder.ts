@@ -3,14 +3,14 @@ import ApiClient from "../core/api-client";
 import { Envs } from '../../../config.env';
 
 @Service()
-export class LoginApiClientBuilder extends ApiClient {
+export class UserApiClientBuilder extends ApiClient {
 
   constructor (
+    @Inject(Envs.TCR_ACCESS_TOKEM)
+    private accessToken: string,
     @Inject(Envs.TCR_BASE_URL)
-    private baseUrl: string,
-    @Inject(Envs.LOGIN_ACCESS_TOKEN)
-    private accessToken: string
+    private baseUrl: string
   ) {
-    super({ baseUrl, accessToken });
+    super({ accessToken, baseUrl });
   }
 }

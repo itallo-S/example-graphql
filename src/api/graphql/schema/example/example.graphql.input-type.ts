@@ -8,4 +8,5 @@ export class ExampleInput {
 
   @Field()
   description: string;
+
 }
