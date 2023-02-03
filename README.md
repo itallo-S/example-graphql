@@ -1,4 +1,4 @@
-# rd-on-api
+# back-graphql
 
 ## Start do Projeto
 Para startar a API fake, antes instale globalmente a dependência `json-server` globalmente e execute:
@@ -12,8 +12,6 @@ Para startar o projeto, execute o comando
   $ yarn start
 ```
 
-## Execução de merge local
-Para executar o merge local, ou seja, trazer alterações de outras branchs para a sua, siga o exemplo abaixo, no caso traremos alterações da branch master para a nossa feature branch feature/DICO-123
 
 ```bash
   $ git checkout master
